@@ -32,7 +32,7 @@ function sendCreateRequest(){
     }
     return new Promise((resolve, reject)=>{
         let xhr = new XMLHttpRequest();
-        let url = 'http://localhost:3000/users/signup';
+        let url = 'https://urlshrinker-mrk.herokuapp.com/users/signup';
         let params = JSON.stringify(jsonobj);
         xhr.open('POST',url,true);
         xhr.setRequestHeader('Content-Type','application/json');
